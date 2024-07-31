@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>My Website</title>
+  <link rel="stylesheet" href="style.css">
+ 
+</head>
+<body>
+  <header>
+    <div class="logo">My_Website</div>
+    <nav>
+      <ul>
+        <li><a href="#beranda">BERANDA</a></li>
+         <li><a href="#profil">PROFIL</a></li>
+        <li><a href="#audio-video">AUDIO VIDEO</a></li>
+        <li><a href="#tentang">TENTANG</a></li>
+        <li><a href="#berita">BERITA</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="beranda">
+    <h2>Selamat Datang di Website saya</h2>
+    <p>Ini adalah halaman beranda.</p>
+  </section>
+
+  <section id="profil">
+    <h2>Profil Saya</h2>
+    <table class="table">
+      <thead>
+        <tr align="center">
+          <th scope="col">FOTO</th>
+          
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+                  <td rowspan="100" align="center"><img src="saya.jpg" width="350" height="500"></td>
+                  <td>NAMA</td>
+                  <td>: MICHELLE ANGGRIANY LETSOIN</td>
+                </tr>
+                <tr>
+                  <td>NIM</td>
+                  <td>: 163 23 074</td>
+                </tr>
+                <tr>
+                  <td>JURUSAN</td>
+                  <td>: DIII MANAJEMEN INFORMATIKA</td>
+                </tr>
+                <tr>
+                  <td>KELAS</td>
+                  <td>: 1C</td>
+                </tr>
+                <tr>
+                  <td>KAMPUS</td>
+                  <td>: POLITEKNIK NEGERI FAKFAK</td>
+                </tr>
+                <tr>
+                  <td>ASAL SEKOLAH</td>
+                  <td>: SMA N 1 fak-fak</td>
+                </tr>
+                <tr>
+                  <td>JENIS KELAMIN</td>
+                  <td>: PEREMPUAN</td>
+                </tr>
+                <tr>
+                  <td>TEMPAT/TANGGAL LAHIR</td>
+                  <td>: FAK-FAK 28 AGUSTUS 2005</td>
+                </tr>
+                <tr>
+                  <td>TINGGI BADAN/BERAT BADAN</td>
+                  <td>: 170 CM/54 KG</td>
+                </tr>
+                <tr>
+                  <td>NAMA AYAH</td>
+                  <td>: ENRICO ROBIC LETSOIN</td>
+                </tr>
+                <tr>
+                  <td>NAMA IBU</td>
+                  <td>: JURIDIET JULIA PINCA</td>
+                </tr>
+                <tr>
+                  <td>ALAMAT</td>
+                  <td>:JL.AHMAD YANI</td>
+                </tr>
+                <tr>
+                  <td>STATUS</td>
+                  <td>: MAHASISWA</td>
+                </tr>
+                <tr>
+                  <td>NO HP</td>
+                  <td>: 082198800118</td>
+                </tr>
+                <tr>
+                  <td>GMAIL</td>
+                  <td>: altsnmichelle@gmail.com</td>
+                </tr>
+      </tbody>
+    </table>
+    
+  </section>
+
+  <section id="audio-video">
+    <h2>Audio dan Video</h2>
+    <p>Ini adalah halaman audio dan video.</p>
+    <audio controls src="Audio.mp4"></audio>
+    <video controls autoplay src="vidpantai.mp4" width="350" height="500"></video>
+  </section>
+
+  <section id="tentang">
+    <h2>Tentang Saya</h2>
+    <p>Hallo!, perkenalkan nama saya Michelle Anggriany Letsoin. Kalian boleh memanggil saya michelle, saya lahir di fakfak pada tanggal 28 agustus 2005,
+       saya anak ke 4 dari 4 bersaudara, saya lulusan dari Sma Negeri 1 fakfak, dan saat ini saya berkuliah di politeknik negeri fakfak, sekian dari saya terimakasih.</p>
+  </section>
+
+  <section id="berita">
+    <h2>Berita Terbaru</h2>
+    <img src="foto7.jpg" class="img-fluid"  width="500" height="300">
+</center>
+<hr>
+
+  <h3 align="center">All Eyes on Papua</h3>
+  
+  <p>
+    Pada 27 Mei 2024, Masyarakat adat suku Awyu di Boven Digoel,Papua Selatan dan Suku Moi di Sorong, 
+    Papua Barat Daya berdemo di depan Mahkama Agung dan menolak pembabatan hutan ini, karena hutan secara turun menurun ,
+    serta sumber penghidupan,pangan,budaya, dan sumber air akan hilang jika hutang ini dibangun perkebunan sawit,"
+  </p>
+  <p>Setelah gerakan All Eyes on Rafah ramai dibagikan oleh masyarakat seluruh dunia,
+     aksi All Eyes on Papua turut menyusul dan diramaikan sejumlah toko.</p>
+
+  </section>
+
+  <footer>
+    <p>&copy; 2024 michelle anggriany</p>
+  </footer>
+
+  <script>
+    // Add smooth scrolling behavior
+    document.querySelectorAll('nav a').forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const targetId = e.target.getAttribute('href');
+        const targetSection = document.querySelector(targetId);
+        targetSection.scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  </script>
+</body>
+</html>
